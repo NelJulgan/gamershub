@@ -1,0 +1,49 @@
+@use '../abstract/' as *;
+@use '../utilities/' as *;
+
+.hero{
+  @supports (background-blend-mode: multiply){
+    background: url(../images/hero-banner.jpg), linear-gradient(180deg, rgba(117,91,135,0.23012955182072825) 44%, rgba(91,6,152,0.34217436974789917) 52%, rgba(89,0,255,1) 96%);
+    background-blend-mode: multiply;
+    height: 100vh;
+    margin-top: 7rem;
+    padding: $section-padding 0;
+    max-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+  }
+ 
+
+  &__subtitle{
+    color: $white;
+    font-family: $ff-oswald;
+    text-transform: capitalize;
+    font-size: $fs-7;
+    letter-spacing: 1.2rem;
+    text-shadow:  0 7px hsla(0, 0%, 0%, 0.4);
+    margin-bottom: 1.5rem;
+  }
+
+  &__title{
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+    color: $white;
+    line-height: 1.1;
+    font-size: clamp(8rem, calc(20vw + 1rem),  20rem);
+    font-family: $fortnite;
+  }
+
+  .btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

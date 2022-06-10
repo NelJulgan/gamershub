@@ -1,0 +1,62 @@
+@use 'colors' as *;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+$fortnite: 'fortnite';
+$ff-oswald: 'Oswald', sans-serif;
+$ff-poppins: 'Poppins', sans-serif;
+
+$fs-1: 60px;
+$fs-2: 34px;
+$fs-3: 30px;
+$fs-4: 26px;
+$fs-5: 24px;
+$fs-6: 22px;
+$fs-7: 20px;
+$fs-8: 18px;
+$fs-9: 15px;
+$fs-10: 14px;
+$fs-11: 13px;
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+
+@font-face {
+  font-family: 'fortnite';
+  src: url(../font/fortnite.otf);
+  text-rendering: optimizeLegibility;
+}
+
+
+.fontstyle-1{
+  color: $white;
+  font-family: $fortnite;
+  font-size: 8rem;
+  font-weight: $fw-400;
+  text-transform: uppercase;
+}
+
+.fontstyle-2{
+  color: $white;
+  font-family: $ff-oswald;
+  font-size: $fs-2;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.fontstyle-3{
+
+  font-family: $ff-oswald;
+  font-size: $fs-2;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+
+
+
+

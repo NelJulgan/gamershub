@@ -1,0 +1,66 @@
+@use 'header' as *;
+@use 'hero' as *;
+@use 'about' as *;
+@use 'tournament' as *;
+@use 'gallery' as *;
+@use 'news' as *;
+@use 'promo' as *;
+@use 'team' as *;
+@use 'newsletter' as *;
+@use 'footer' as *;
+
+@media (min-width: 575px){
+  .container{
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+}
+
+@media (min-width: 768px){
+  .container {
+     max-width: 700px;
+  }
+
+ @include header-md();
+ @include about-md();
+ @include news-md();
+ @include promo-md();
+ @include newsletter-md();
+ @include footer-md();
+
+ 
+}
+
+@media (min-width: 1024px){
+  $section-padding: 100px;
+  .container{
+    max-width: 1000px;
+  }
+
+  @include header-xl();
+  @include about-xl();
+  @include tournament-xl();
+  @include newsletter-xl();
+  @include footer-xl();
+
+
+}
+
+@media (min-width: 1200px){
+
+  .container{
+    max-width: 1200px;
+  }
+    
+  @include header-xxl();
+  @include about-xxl();
+  @include news-xxl();
+  @include footer-xxl();
+ 
+}
+
+
+
+
+// @media (min-width: 1200px)

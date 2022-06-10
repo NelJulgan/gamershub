@@ -1,0 +1,54 @@
+@use 'fonts' as *;
+@use 'colors' as *;
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+a, img, span, input, button, ion-icon{
+  display: block;
+}
+
+
+input{
+  font: inherit;
+  width: 100%;
+  border: none;
+}
+
+html{
+  font-family: $ff-poppins;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  overflow-x: hidden;
+  font-size: 1.4rem;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: $raisin-black-2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $med-gray;
+  border-radius: 10px;
+ 
+}

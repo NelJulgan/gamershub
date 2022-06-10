@@ -1,0 +1,155 @@
+@use '../abstract/' as *;
+@use '../utilities/' as *;
+
+.newsletter{
+
+  padding-bottom: 6rem;
+
+  
+
+  &__card{
+    background: rgb(89,0,255);
+    background: radial-gradient(circle, rgba(89,0,255,1) 0%, rgba(91,6,152,1) 96%, rgba(71,17,108,1) 100%);
+    border-radius: 12px;
+    padding: 5rem 2.5rem;
+    text-align: center;
+
+    
+
+
+    &__content{
+      margin-bottom: 3rem;
+
+      .newsletter-img{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        
+        
+        img{
+          height:100px;
+          margin-inline: auto;
+        }
+      }
+
+      &__title{
+        color: $white;
+        text-transform: uppercase;
+        font-family: $ff-oswald;
+        font-size: 3rem;
+      }
+      
+    }
+  }
+
+  &__form{
+
+    .input-field{
+      background: hsla(0, 0%, 0%, 0.2);
+      padding: 1.7rem 2.5rem;
+      outline: none;
+      border: solid 1px $med-gray;
+      margin-bottom: 1.5rem;
+
+      &::placeholder{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        color: $med-gray;
+      }
+
+     
+    }
+  }
+  .btn-secondary{
+    margin-inline: auto;
+  }
+
+}
+
+@mixin newsletter-md(){
+  .newsletter{
+
+    &__card{
+      text-align: left;
+      
+
+      &__content{
+        display: flex;
+       align-items: center;
+       gap: 2rem;
+       justify-content: center;
+
+       .newsletter-img{
+        width: min-content;
+       }
+      }
+    }
+
+    &__form{
+      position: relative;
+      max-width: 530px;
+      margin-inline: auto;
+
+      &::after{
+        content: "";
+        bottom: 9px;
+        left: -3px;
+        width: 27px;
+        height: 1px;
+        transform: rotate(43deg);
+      }
+      .input-field{
+        clip-path: $polygon-4;
+        border: none;
+        margin-bottom: 0;
+        
+      }
+      .btn-secondary{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@mixin newsletter-xl(){
+  .newsletter{
+
+    padding-bottom: 200px;
+
+    &__card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      padding: 5rem 5rem;
+
+      &__content{
+        margin: 0;
+        margin-inline: 0;
+        width: 450px;
+
+        &__title{
+          font-size: 4rem;
+          line-height: 1.2;
+        }
+
+        .newsletter-img{
+          padding-left: 3rem;
+          margin: 0;
+          
+        }
+      }
+
+    }
+    &__form{
+      flex-grow: 2;
+      
+      
+      
+    }
+  }
+}
+

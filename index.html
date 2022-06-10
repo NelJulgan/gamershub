@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>GamersHub</title>
+</head>
+<body id="top">
+
+  <header class="header">
+    
+
+    <div class="overlay" data-overlay></div>
+      <div class="container">
+       <a href="#" class="logo">
+         <img src="./images/logo.png" alt="GamersHub">
+       </a>
+
+       <button class="nav-open-btn" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+       </button>
+
+       <nav class="navbar " data-nav>
+
+        <div class="navbar__top">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="GamersHub logo">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar__list">
+          <li>
+            <a href="#top" class="navbar__list__link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar__list__link">About</a>
+          </li>
+          <li>
+            <a href="#tournament" class="navbar__list__link">tournament</a>
+          </li>
+          <li>
+            <a href="#news" class="navbar__list__link">News</a>
+          </li>
+          <li>
+            <a href="#team" class="navbar__list__link">team</a>
+          </li>
+         
+          <li>
+            <a href="#footer" class="navbar__list__link">contact</a>
+          </li>
+        </ul>
+        <ul class="navbar__social-list">
+          <li>
+            <a href="#" class="navbar__social-list__link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__social-list__link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__social-list__link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__social-list__link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>          
+          
+        </ul>
+       </nav>
+       <div class="header__actions">
+         <button class="search">
+          <ion-icon name="search-outline"></ion-icon>
+         </button>
+
+         <button class="btn-sign-in">
+
+            <div class="icon-box">
+             <ion-icon name="log-in-outline"></ion-icon>
+            </div>
+
+            <span>Log-in</span>
+          
+         </button>
+       </div>
+      </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section class="hero"  id="home" loading="lazy">
+        <div class="container">
+          <div class="reveal">
+            <p class="hero__subtitle reveal">The season X</p>
+            <h1 class=" hero__title">FORTNITE</h1>
+  
+            <div class="btn-group">
+              <button class="btn btn-primary">
+                <span>Watch Live</span>
+                <ion-icon name="play-circle"></ion-icon>
+              </button>
+  
+              <button class="btn btn-link">Dream making</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <div class="section-wrapper">
+
+        <section class="about reveal" id="about">
+          <div class="container">
+            <figure class="about__banner reveal">
+              <img src="./images/about-img.png" alt="M shape" class="about-img">
+              <img src="./images/character-1.png" alt="M game character" class="character character-1">
+              <img src="./images/character-2.png" alt="M game character" class="character character-2">
+              <img src="./images/character-3.png" alt="M game character" class="character character-3">
+            </figure> 
+            
+            <div class="about__content ">
+              <p class="about__content__subtitle"> Find Team Member</p>
+
+              <h2 class="about__content__title">Experience just for gamers <strong>offer</strong> </h2>
+
+              <p class="about__content__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni amet aspernatur corrupti quo, commodi nobis? Voluptatem ullam ipsum dolorem necessitatibus.
+              </p>
+
+              <a href="#" class="about__content__text-bottom">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                <span>Find Team Members Now</span>
+            
+              </a>
+               
+            </div>
+          </div>
+        </section>
+
+        <section class="tournament reveal" id="tournament">
+          <div class="container">
+            <div class="tournament__content">
+              <p class="tournament__content__subtitle">Check out our next</p>
+
+              <h2 class="fontstyle-3 tournament__content__title">Gaming tournaments!</h2>
+
+              <p class="tournament__content__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore ratione porro ipsa, consequatur odio.
+              </p>
+
+              <button class="btn btn-primary">Join with us</button>
+            </div>
+            <div class="tournament__prize">
+              <h2 class="fontstyle-3 tournament__prize__title">Prize Pool</h2>
+              <data value="80000">$80000</data>
+
+              <figure>
+                <img src="./images/prize-img.png" alt="prize image">
+              </figure>
+            </div>
+
+            <div class="tournament__winners reveal">
+
+              <h2 class="fontstyle-3 tournament__winners__title">Last Winners</h2>
+              <ul class="tournament__winners__list">
+                <li>
+                  <div class="tournament__winners__list__card">
+                    <figure class="tournament__winners__list__card__banner">
+                      <img src="./images/team/winner-img-1.png" alt="winner image">
+                    </figure>
+                    <h3 class="tournament__winners__list__card__title">1st Place</h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="tournament__winners__list__card">
+                    <figure class="tournament__winners__list__card__banner">
+                      <img src="./images/team/winner-img-2.png" alt="winner image">
+                    </figure>
+                    <h3 class="tournament__winners__list__card__title">2nd Place</h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+
+            <div class="gallery__content swiper">
+              <div class="gallery__content__list swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <figure class="gallery__content__list__item">
+                    <img src="./images/gallery-img-1.jpg" alt="">
+                  </figure>
+                </div>
+
+                <div class="swiper-slide">
+                  <figure class="gallery__content__list__item">
+                    <img src="./images/gallery-img-2.jpg" alt="">
+                  </figure>
+                </div>
+
+                <div class="swiper-slide">
+                  <figure class="gallery__content__list__item">
+                    <img src="./images/gallery-img-3.jpg" alt="">
+                  </figure>
+                </div>
+
+                <div class="swiper-slide">
+                  <figure class="gallery__content__list__item">
+                    <img src="./images/gallery-img-4.jpg" alt="">
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>    
+        
+      <section class="news reveal" id="news">
+        <div class="container">
+
+          <div class="news-wrapper">
+
+            <div class="latest-news">
+              <h3 class="news-wrapper__title">Latest News</h3>
+
+              <div class="latest-news__list">
+
+                <article>
+                  <figure class="latest-news__list__banner">
+                    <img src="./images/news/news-1.jpg" alt="latest news article image">
+                    <span class="latest-news__list__banner__comment">
+                      <ion-icon name="chatbubble"></ion-icon>10
+                    </span>
+                  </figure>
+                  <div class="latest-news__list__content">
+                    <a href="#" class="latest-news__list__content__category">
+                      <span class="latest-news__list__content__category__title">latest</span>super mario odyssey
+                    </a>
+                    <p class="latest-news__list__content__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum dicta et, maiores officia repudiandae!
+                    </p>
+                    <div class = "latest-news__list__content__date">News | Latest | 11:00 AM</div>
+                  </div>
+                </article>
+
+                <article>
+                  <figure class="latest-news__list__banner">
+                    <img src="./images/news/news-2.jpg" alt="latest news article image">
+                    <span class="latest-news__list__banner__comment">
+                      <ion-icon name="chatbubble"></ion-icon>10
+                    </span>
+                  </figure>
+                  <div class="latest-news__list__content">
+                    <a href="#" class="latest-news__list__content__category">
+                      <span class="latest-news__list__content__category__title">latest</span>destiniy 2
+                    </a>
+                    <p class="latest-news__list__content__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum dicta et, maiores officia repudiandae!
+                    </p>
+                    <div class = "latest-news__list__content__date">News | Latest | 11:00 AM</div>
+                  </div>
+                </article>
+
+                <article>
+                  <figure class="latest-news__list__banner">
+                    <img src="./images/news/news-3.jpg" alt="latest news article image">
+                    <span class="latest-news__list__banner__comment">
+                      <ion-icon name="chatbubble"></ion-icon>10
+                    </span>
+                  </figure>
+                  <div class="latest-news__list__content">
+                    <a href="#" class="latest-news__list__content__category">
+                      <span class="latest-news__list__content__category__title">latest</span>lost ark
+                    </a>
+                    <p class="latest-news__list__content__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum dicta et, maiores officia repudiandae!
+                    </p>
+                    <div class = "latest-news__list__content__date">News | Latest | 11:00 AM</div>
+                  </div>
+                </article>
+
+                <article>
+                  <figure class="latest-news__list__banner">
+                    <img src="./images/news/news-4.jpg" alt="latest news article image">
+                    <span class="latest-news__list__banner__comment">
+                      <ion-icon name="chatbubble"></ion-icon>10
+                    </span>
+                  </figure>
+                  <div class="latest-news__list__content">
+                    <a href="#" class="latest-news__list__content__category">
+                      <span class="latest-news__list__content__category__title">latest</span>game of warriors
+                    </a>
+                    <p class="latest-news__list__content__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam nostrum dicta et, maiores officia repudiandae!
+                    </p>
+                    <div class = "latest-news__list__content__date">News | Latest | 11:00 AM</div>
+                  </div>
+                </article>
+
+              </div>  
+            </div>
+
+            <div class="popular-news">
+              <h3 class="news-wrapper__title">pupular news</h3>
+              
+              <div class="popular-news__list">
+
+                <article>
+                  <figure class="popular-news__list__banner">
+                    <img src="./images/news/p-news-1.jpg" alt="popular news article image">
+                  </figure>
+                  <div class="popular-news__list__content">
+                    <a href="#" class="popular-news__list__content__category">
+                      <span class="popular-news__list__content__category__title" >Popular</span> clash of clans
+                    </a>
+                    <p class="popular-news__list__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, expedita.</p>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure class="popular-news__list__banner">
+                    <img src="./images/news/p-news-2.jpg" alt="popular news article image">
+                  </figure>
+                  <div class="popular-news__list__content">
+                    <a href="#" class="popular-news__list__content__category">
+                      <span class="popular-news__list__content__category__title" >Popular</span>star wars jedi: fallen order 2
+                    </a>
+                    <p class="popular-news__list__content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure class="popular-news__list__banner">
+                    <img src="./images/news/p-news-3.jpg" alt="popular news article image">
+                  </figure>
+                  <div class="popular-news__list__content">
+                    <a href="#" class="popular-news__list__content__category">
+                      <span class="popular-news__list__content__category__title" >Popular</span> marvel's midnight suns
+                    </a>
+                    <p class="popular-news__list__content__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure class="popular-news__list__banner">
+                    <img src="./images/news/p-news-4.jpg" alt="popular news article image">
+                  </figure>
+                  <div class="popular-news__list__content">
+                    <a href="#" class="popular-news__list__content__category">
+                      <span class="popular-news__list__content__category__title" >Popular</span> fortnite season 8
+                    </a>
+                    <p class="popular-news__list__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+
+                </article>          
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>          
+      </section>
+
+      <section class="promo flex" id="promo">
+        <div class="container">
+          <span class="promo__sub-title">join the battle</span>
+          <h2 class="fontstyle-1 promo__title">fortnite battle royale</h2>
+          <p class="promo__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit optio recusandae molestias, pariatur labore sint.</p>
+          <div class="promo__btn-group">
+            <button class="btn-promo">
+              <ion-icon name="play-circle"></ion-icon>
+              <span> watch trailer</span>
+            </button>
+            <button class="btn-promo">
+              <ion-icon name="game-controller"></ion-icon>
+              <span> play free now</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="team reveal" id="team">
+          <div class="container">
+            <h2 class="fontstyle-2 section-title">Active team members</h2>
+
+            <ul class="team__list">
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-1.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-2.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-3.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-4.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-5.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-6.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-7.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-8.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-9.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-10.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-11.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-12.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-13.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team__list__member">
+                  <figure>
+                    <img src="./images/team/team-member-14.png" alt="team member image">
+                  </figure>
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+      </section>
+
+      <section class="newsletter reveal" id="news">
+        <div class="container">
+
+          <div class="newsletter__card">
+
+            <div class="newsletter__card__content">
+              <figure class="newsletter-img">
+                <img src="./images/newsletter-img.png" alt="news letter image">
+                </figure>
+                <h2 class=" newsletter__card__content__title">Subscribe to our news letter</h2>
+              </div>
+
+              <form action="" class="newsletter__form">
+                <input type="email" name="email" placeholder="Your Email Address" class="input-field" required>
+
+                <button type="submit" class="btn btn-secondary">Subscribe</button>
+              </form>
+
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="footer__top" id="footer">
+      <div class="container">
+
+        <div class="footer__top__brand-wrapper">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="gamehub logo">
+          </a>
+
+          <div class="footer__top__brand-wrapper__menu">
+            <ul class="footer__top__brand-wrapper__menu__list">
+              <li>
+                <a href="#top" class="footer__top__brand-wrapper__menu__list__link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="footer__top__brand-wrapper__menu__list__link">About</a>
+              </li>
+              <li>
+                <a href="#tournament" class="footer__top__brand-wrapper__menu__list__link">Tournament</a>
+              </li>
+             
+              <li>
+                <a href="#news" class="footer__top__brand-wrapper__menu__list__link">News</a>
+              </li>
+              <li>
+                <a href="#team" class="footer__top__brand-wrapper__menu__list__link">Team</a>
+              </li>
+              <li>
+                <a href="#footer" class="footer__top__brand-wrapper__menu__list__link">Contact</a>
+              </li>
+            </ul>
+            <div class="footer__input-wrapper">
+              <input type="text" name="message" placeholder="Find Here Now" class="footer-input" required>
+              <button class="btn btn-footer">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-quicklinks">
+          <ul class="footer-quicklinks__list">
+            <li>
+              <a href="#" class="footer-quicklinks__list__item">Faq</a>
+            </li>
+            <li>
+              <a href="#" class="footer-quicklinks__list__item">Hel Center</a>
+            </li>
+            <li>
+              <a href="#" class="footer-quicklinks__list__item">Terms Of Use</a>
+            </li>
+            <li>
+              <a href="#" class="footer-quicklinks__list__item">Privacy</a>
+            </li>
+          </ul>
+
+          <ul class="footer-quicklinks__social-list">
+
+            <li>
+              <a href="#" class="footer-quicklinks__social-list__link">
+                <ion-icon name="logo-discord"></ion-icon> 
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-quicklinks__social-list__link">
+                  <ion-icon name="logo-twitch"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-quicklinks__social-list__link">
+                 <ion-icon name="logo-xbox"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-quicklinks__social-list__link">
+                 <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy;Gamehub 2022. All Rights Reserved
+        </p>
+        <figure class="footer__bottom__img">
+          <img src="./images/footer-bottom-img.png" alt="Online payment companies">
+        </figure>
+      </div>
+    </div>
+  </footer> 
+
+  <a href="#top" class="btn go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
